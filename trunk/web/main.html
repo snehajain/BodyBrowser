@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+	<html class="no-js">
+		<head>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+	    <!-- Optional Bootstrap theme -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" crossorigin="anonymous">
+	    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+	    <script type="text/javascript">
+	    	var index = angular.module('index',[]);
+			index.controller('indexController', function($scope, $http, $window) {
+			});
+	    </script>
+		</head>
+
+		<body ng-app="index" ng-controller="indexController">
+			<div class="container">
+				<div class="row">
+					CMPE 280
+				</div>
+				<div class="row" ng-include="'index.html'">
+				</div>
+			</div>
+		</body>
+	</html>

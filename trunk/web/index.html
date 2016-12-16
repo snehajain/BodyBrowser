@@ -49,10 +49,7 @@
 	<script type="text/javascript" src="scripts/viewer.js"></script>
 
 	<script type="text/javascript">
-	  <!-- Start viewer. -->
 	  $(document).ready(function() {
-	    // The assignment to window.viewer_ is ONLY for debugging.
-	    // This variable should NEVER be accessed from code.
 	    window.viewer_ = new o3v.Viewer();
 	  });
 	</script>
@@ -62,50 +59,15 @@
 	<body>
 	<div class="container" style="width:100%; padding: 0 !important; margin: 0 !important;">
 		<div class="row" style="text-align:center;background-color: black;color: white; width:100%; margin: 0 !important;">
-			<!-- <h4 > </h4> -->
-			<h1 >CMPE 280: Body Browser (Team Buddy Rental)</h1>
+			<h1 >CMPE 280: Body Browser (Team Buddy Rental) <button class="btn pull-right">Team</button></h1>
 
 		</div>
 		<div id="secondRow" class="row" width="100%">
 
-			<!-- Canvas for verifying webgl -->
-			<!-- TODO(dkogan): dynamically create this -->
 			<canvas id="gltest" style="display:none"></canvas>
 
-			<!-- Container for labels -->
-			<!-- TODO(dkogan): dynamically create this and use css -->
 			<div id="labelcontainer" style="width:0px; height:0px; left:0px; top:0px; position:absolute; z-index:1"></div>
 
-			<!-- Quick help panel -->
-			<div id="help" class="help">
-			<b>Quick guide ('?' to toggle)</b>
-			<br>
-			<br>
-			<b>Navigation</b>
-			<li>Click+drag with the mouse to rotate, scroll to zoom.
-			<li>Or use the buttons in the upper left. The Home button resets the view.
-			<li>Or use the arrow keys and Page Up / Page Down. The Home key resets the view.
-			<br>
-			<br>
-			<b>Slider</b>
-			<li>Use the opacity slider on the left to reveal layers.
-			<li>Click on the toggle below the slider to control layers individually.
-			<br>
-			<br>
-			<b>Selection</b>
-			<li>Use the searchbox at the upper right to search, or click on entities to select them.
-			<li>Click on the background or on a label to undo selection.
-			<li>Ctrl+click on entities or labels to hide entities. (Cmd+click on mac.)
-			<li>Shift+click on entities or labels (or click on the 'pin' icon in a label) to pin an entity. This will keep it selected while you select more.
-			<li>Some entities can be expanded by clicking on the 'plus' on a label.
-			<br>
-			<br>
-			<b>Models</b>
-			<li>Use the model button at the top of the slider to switch models (if others available).
-			</div>
-			<div id="help-hidden" class="help-hidden">
-			<b>Quick guide ('?' to toggle)</b>
-			</div>
 			<div id="opac_idx" style="display:none;left:50%;top:100%;position:absolute;margin-top:-50px;color:#06F;z-index:3;margin-left:-89px"></div>
 
 			<div id="r0" class="indicator"> </div>

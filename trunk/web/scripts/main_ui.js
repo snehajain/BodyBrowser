@@ -54,7 +54,7 @@ o3v.MainUI = function(nextModelCallback) {
       'border-bottom': '1px solid #c2ffb7',
       'background-position': 'center center',
       'background-repeat': 'no-repeat',
-      'background-color': '#fff',
+      'background-color': '#fff',      
       'z-index': o3v.uiSettings.ZINDEX_MAINUI
     }).click(nextModelCallback);
 };

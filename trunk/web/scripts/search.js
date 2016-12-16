@@ -30,6 +30,7 @@ o3v.Search = function(selectCallback) {
       'border-radius': '12px',
       'padding': '2px 8px 2px 8px',
       'opacity': 0.8,
+      'margin-top': '1%',
       'z-index': o3v.uiSettings.ZINDEX_MAINUI
     });
 };
